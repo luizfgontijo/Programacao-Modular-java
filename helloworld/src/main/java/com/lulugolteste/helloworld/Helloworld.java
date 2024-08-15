@@ -7,6 +7,7 @@ public class Helloworld {
         /*
         This function is made for calculate the sum of two numbers.
         */
+        sum();
         
     }
     static void sum(){
