@@ -2,7 +2,7 @@ package com.lulugol.atividade01;
 
 import java.util.Scanner;
 
-public class Ex001 {
+public class Atividade01 {
     public static void main (String [] args)
     {
         Scanner s = new Scanner (System.in);
@@ -14,22 +14,17 @@ public class Ex001 {
         }
         System.out.println("");
         int vetorFat[] = new int[5];
-        int fat = 0;
-        for (int i =0;i <5; i++){
-            int n =1;
-            do {
-            fat = vetor [i];
-            n = fat; 
-            n= n -1;
-            fat = fat *n;
+        
+        for (int i = 0; i < 5; i++) {
+            int fat = 1;
+            for (int j = 1; j <= vetor[i]; j++) {
+                fat *= j;
             }
-            while (n>=1);
             vetorFat[i] = fat;
-            
         }
-        for ( int i =0; i <5; i++)
-        {
-            System.out.println(vetorFat[i]+"");
+        
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Fatorial de " + vetor[i] + " = " + vetorFat[i]);
         }
         s.close();
     }

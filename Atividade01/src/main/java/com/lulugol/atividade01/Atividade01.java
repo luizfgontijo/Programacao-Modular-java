@@ -1,5 +1,5 @@
 /*
-    Faça um programa que leia um vetor A com 15 elementos inteiros. Em seguida, construa
+    Faça um programa que leia um vetor A com 5 elementos inteiros. Em seguida, construa
 um vetor B do mesmo tipo, em que cada elemento de B deva ser o resultado do fatorial
 correspondente de cada elemento de A. Imprima na tela os vetores A e B.
 */
@@ -12,7 +12,7 @@ public class Atividade01 {
     {
         Scanner s = new Scanner (System.in);
         int vetor []= new int [5];
-        for (int i=0; i<5; i++)// alterar pra 15 depois dos testes
+        for (int i=0; i<5; i++)
         {
             System.out.println("Digite o A["+ i +"]");
             vetor [i] = s.nextInt();
