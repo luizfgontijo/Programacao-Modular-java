@@ -2,7 +2,7 @@ package com.lulugol.atividade01;
 
 import java.util.Scanner;
 
-public class Atividade01 {
+public class Ex001 {
     public static void main (String [] args)
     {
         Scanner s = new Scanner (System.in);
