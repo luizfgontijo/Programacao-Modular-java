@@ -1,12 +1,9 @@
-/*
-área para realização de testes.
-*/
 
 package com.lulugol.atividade01;
 
 import java.util.Scanner; 
 
-public class Atividade01 {
+public class Ex004 {
     static void calc(int first, int second, int third, String tipo){
         int media=0;
         if ("A".equals(tipo)){
