@@ -1,7 +1,4 @@
 /*
-área para realização de testes.
-*/
-/*
 A prefeitura de uma cidade fez uma pesquisa entre os seus habitantes, coletando dados
 sobre o salário e o número de filhos. Faça um método que leia esses dados para um número
 não determinado de pessoas, calcule e exiba a média de salário da população (a condição
@@ -11,7 +8,7 @@ package com.lulugol.atividade01;
 
 import java.util.Scanner;
 
-public class Atividade01 {
+public class Ex005 {
     static void calc(int salary, int people){
         int media;
         media = salary/people;

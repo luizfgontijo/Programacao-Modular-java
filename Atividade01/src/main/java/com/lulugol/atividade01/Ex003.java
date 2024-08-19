@@ -34,7 +34,7 @@ public class Ex003 {
                 r =1;
             }
             else {
-                r = 2;
+                r = 69;
             }
             i++;
         }
