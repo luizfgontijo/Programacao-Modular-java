@@ -11,9 +11,29 @@ public class Product {
         return price * quantity;
     }
     public void addProducts (int quantity){
+        if (quantity>0){
         this.quantity = this.quantity + quantity;
+        }
+        else{
+            System.out.println("Insira um valor positivo");
+        }
     }
     public void removeProducts (int quantity){
+        if(quantity>0){
         this.quantity -= quantity;
+        }
+        else{
+            System.out.println("Insira um valor positivo");
+        }
+    }
+    public String toString(){
+        return name 
+                + ", " 
+                + String.format("%.2f", price)
+                + " reais, "
+                + quantity 
+                + " unidades, Total: " 
+                + String.format("%.2f", totalValueInStock())
+                +" reais";
     }
 }
