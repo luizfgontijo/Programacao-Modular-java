@@ -28,15 +28,24 @@ public class CiclistaController {
             String nomeCiclista2 = view.getNomeCiclista2();
             int duracaoCiclista2 = view.getDuracaoCiclista2();
 
-            String vencedorEtapa = duracaoCiclista1 < duracaoCiclista2 ? nomeCiclista1 : nomeCiclista2;
+            String vencedorEtapa = "";
+            if (duracaoCiclista1>duracaoCiclista2){
+                 vencedorEtapa= nomeCiclista2;
+            } else if (duracaoCiclista2>duracaoCiclista1){
+                 vencedorEtapa= nomeCiclista1;
+            } else{
+                 vencedorEtapa = "Empate";
+            }
             view.mostrarResultado("Vencedor da Etapa " + numeroEtapa + ": " + vencedorEtapa);
 
             int diferencaTempo=0;
 
             if (duracaoCiclista1> duracaoCiclista2){
                 diferencaTempo= duracaoCiclista1- duracaoCiclista2;
-            } else {
+            } else if (duracaoCiclista1<duracaoCiclista2) {
                 diferencaTempo = duracaoCiclista2- duracaoCiclista1;
+            } else {
+                diferencaTempo = 0;
             }
 
             view.mostrarResultado("Diferença de tempo entre os dois ciclistas: "+ + diferencaTempo + " segundos.");
